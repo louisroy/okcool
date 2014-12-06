@@ -1,0 +1,120 @@
+<html>
+<head>
+	<title>{Title}</title>
+	
+	<link rel="shortcut icon" href="{Favicon}">
+	<link rel="alternate" type="application/rss+xml" href="{RSS}">
+	
+	{block:Description}
+		<meta name="description" content="{MetaDescription}" />
+	{/block:Description}
+	
+	<link rel="stylesheet" type="text/css" media="screen" href="css/global.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="css/font-awesome.min.css" />
+</head>
+<body>
+	<div class="title">
+		<h1>{Title}</h1>
+	</div>
+	
+	<nav class="nav-header">
+		<ul>
+			<li>
+				<a href="/about/">About</a>
+			</li>
+			<li>
+				<a href="/interviews">Interviews</a>
+			</li>
+			<li>
+				<a href="/features/">Features</a>
+			</li>
+			<li>
+				<a href="/submit/">Submit</a>
+			</li>
+			<li>
+				<a href="/links/">Links</a>
+			</li>
+			<li>
+				<a href="http://stolenground.storenvy.com/" target="_blank">Store</a>
+			</li>
+			<li>
+				<a title="Facebook" href="https://www.facebook.com/stolenground" target="_blank"><i class="fa fa-facebook"></i></a>
+			</li>
+			<li>
+				<a title="Flickr" href="https://www.flickr.com/groups/stolenground/" target="_blank"><i class="fa fa-flickr"></i></a>
+			</li>
+			<li>
+				<a title="Instagram" href="http://instagram.com/_deadhands" target="_blank"><i class="fa fa-instagram"></i></a>
+			</li>
+			<li>
+				<a title="Email" href="mailto:stolengroundpublishing@gmail.com"><i class="fa fa-envelope"></i></a>
+			</li>
+		</ul>
+	</nav>
+	
+	<hr />
+	
+	<div class="content">
+		<div class="posts">
+			<div class="post">
+				<p>
+					<img src="http://40.media.tumblr.com/8e9b624a6a2349cd78ed9f738a165700/tumblr_ng546bKGVC1txj6yvo1_500.jpg" />
+				</p>
+				
+				<p>
+					<img src="http://41.media.tumblr.com/1e2f87401f71decf436f5735baf3a61b/tumblr_ng2mepkCte1tu7pweo1_500.jpg" />
+				</p>
+				
+				<nav class="nav-meta">
+					<ul class="cf">
+						<li class="date">
+							November 4th 2014
+						</li>
+						<li>
+							<a href="#"><i class="fa fa-retweet"></i></a>
+						</li>
+						<li>
+							<a href="#"><i class="fa fa-heart"></i></a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div class="post">
+				<h2><a href="#">Titre de l'interview</a></h2>
+				
+				<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan ante vitae suscipit ullamcorper. Vestibulum interdum massa eu enim hendrerit venenatis. Donec nec finibus nibh. Curabitur consequat neque dui, vitae consectetur tellus semper non. Fusce congue elit pellentesque tortor rutrum commodo. Nunc sit amet risus in est mattis maximus. Sed dictum lacus nulla, id maximus ligula condimentum vitae.</p>
+
+				<p>Integer faucibus nulla lectus, vitae convallis orci gravida vel. Donec metus velit, consectetur a mollis quis, vestibulum mollis massa. Maecenas ut neque sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras egestas vel justo id ultricies. Aliquam dictum sit amet enim id mattis. Donec ac nibh ut augue suscipit hendrerit. Vestibulum lobortis nisl nunc, nec condimentum justo maximus eget. Phasellus nec vulputate ligula, in lobortis tellus. Fusce nunc turpis, pharetra vel semper eget, lobortis id ante. Nam dictum dui in purus aliquam rutrum quis in diam. Phasellus vel nunc vestibulum, dapibus orci vitae, scelerisque erat. Sed suscipit laoreet turpis pellentesque porta. Pellentesque quis vestibulum ligula. </p>
+				
+				<nav class="nav-meta">
+					<ul class="cf">
+						<li class="date">
+							November 4th 2014
+						</li>
+						<li>
+							<a href="#"><i class="fa fa-retweet"></i></a>
+						</li>
+						<li>
+							<a href="#"><i class="fa fa-heart"></i></a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		
+	</div>
+	
+	<footer>
+		{block:PreviousPage}
+			<a href="{PreviousPage}">&#171; Previous</a>
+		{/block:PreviousPage}{block:NextPage}
+			<a href="{NextPage}">Next &#187;</a>
+		{/block:NextPage}
+		
+		<a href="/archive">Archive</a>
+	</footer>
+	
+	<script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="js/app.js"></script>
+</body>
+</html>
