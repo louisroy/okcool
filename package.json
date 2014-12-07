@@ -1,0 +1,23 @@
+{
+  "name": "stolenground",
+  "version": "1.0.0",
+  "description": "stolenground\r ============",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "peak": "^0.4.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/louisroy/stolenground"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/louisroy/stolenground/issues"
+  },
+  "homepage": "https://github.com/louisroy/stolenground"
+}
