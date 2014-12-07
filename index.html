@@ -1,6 +1,6 @@
 <html>
 <head>
-	<title>{Title}</title>
+	<title>!(Title)</title>
 	
 	<link rel="shortcut icon" href="{Favicon}">
 	<link rel="alternate" type="application/rss+xml" href="{RSS}">
@@ -9,12 +9,14 @@
 		<meta name="description" content="{MetaDescription}" />
 	{/block:Description}
 	
-	<link rel="stylesheet" type="text/css" media="screen" href="css/global.css" />
-	<link rel="stylesheet" type="text/css" media="screen" href="css/font-awesome.min.css" />
+	<!-- +(src: '/css/global.css' media: 'all') -->
+	<!-- +(src: '/css/font-awesome.min.css' media: 'all') -->
+	
+	<link rel="stylesheet" type="text/css" media="all" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" />
 </head>
 <body>
 	<div class="title">
-		<h1>{Title}</h1>
+		<h1>!(Title)</h1>
 	</div>
 	
 	<nav class="nav-header">
