@@ -10,7 +10,7 @@ html, body {
 }
 
 body {
-	font-family:Helvetica, Arial, sans-serif;
+	font-family:Helvetica Neue, Helvetica, Arial, sans-serif;
 	font-size:70%;
 }
 
@@ -137,6 +137,9 @@ div.content {
 .nav-meta ul li.date {
 	display:inline-block;
 	float:left;
+}
+
+.nav-meta ul li.date a {
 	color:#999;
 	font-size:0.7rem;
 }

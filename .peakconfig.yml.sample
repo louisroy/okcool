@@ -1,0 +1,6 @@
+blog: stolenground
+email: email@gmail.com
+password: p4ssw0rd
+output_path: .peak
+port: 1111
+index: index.html

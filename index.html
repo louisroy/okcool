@@ -1,18 +1,17 @@
+<!DOCTYPE html>
 <html>
 <head>
 	<title>!(Title)</title>
 	
-	<link rel="shortcut icon" href="{Favicon}">
-	<link rel="alternate" type="application/rss+xml" href="{RSS}">
+	<link rel="shortcut icon" href="!(Favicon)">
+	<link rel="alternate" type="application/rss+xml" href="!(RSS)">
 	
-	{block:Description}
-		<meta name="description" content="{MetaDescription}" />
-	{/block:Description}
-	
-	<!-- +(src: '/css/global.css' media: 'all') -->
-	<!-- +(src: '/css/font-awesome.min.css' media: 'all') -->
+	<!-- #(Description) -->
+		<meta name="description" content="!(MetaDescription)" />
+	<!-- ## -->
 	
 	<link rel="stylesheet" type="text/css" media="all" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" />
+	<!-- +(src: '/css/global.css' media: 'all') -->
 </head>
 <body>
 	<div class="title">
@@ -58,162 +57,149 @@
 	
 	<div class="content">
 		<div class="posts">
-			{block:Posts}
-				{block:Text}
-					<div class="post text">
-						{block:Title}
-							<h3><a href="{Permalink}">{Title}</a></h3>
-						{/block:Title}{Body}
-					</div>
-				{/block:Text}
-				
-				{block:Photo}
-					<div class="post photo">
-						<img src="{PhotoURL-500}" alt="{PhotoAlt}"/>
+			<!-- #(Posts) -->
+				<div class="post">
+					<!-- #(Text) -->
+						<div class="post text">
+							<!-- #(Title) -->
+								<h3><a href="!(Permalink)">!(Title)</a></h3>
+							<!-- ## -->
+							!(Body)
+						</div>
+					<!-- ## -->
+					
+					<!-- #(Photo) -->
+						<div class="post photo">
+							<img src="!(PhotoURL-500)" alt="!(PhotoAlt)"/>
 
-						{block:Caption}
-						<div class="caption">{Caption}</div>
-						{/block:Caption}
-					</div>
-				{/block:Photo}
-				
-				{block:Panorama}
-					<div class="post panorama">
-						{LinkOpenTag}
-							<img src="{PhotoURL-Panorama}" alt="{PhotoAlt}"/>
-						{LinkCloseTag}
-						
-						{block:Caption}
-							<div class="caption">{Caption}</div>
-						{/block:Caption}
-					</div>
-				{/block:Panorama}
-				
-				{block:Photoset}
-					<div class="post photoset">
-						{Photoset-500}
-						{block:Caption}
-							<div class="caption">{Caption}</div>
-						{/block:Caption}
-					</div>
-				{/block:Photoset}
-				
-				{block:Quote}
-					<div class="post quote">
-						"{Quote}"
+							<!-- #(Caption) -->
+								<div class="caption">!(Caption)</div>
+							<!-- ## -->
+						</div>
+					<!-- ## -->
+					
+					<!-- #(Panorama) -->
+						<div class="post panorama">
+							!(LinkOpenTag)
+								<img src="!(PhotoURL-Panorama}" alt="{PhotoAlt)"/>
+							!(LinkCloseTag)
+							
+							<!-- #(Caption) -->
+								<div class="caption">!(Caption)</div>
+							<!-- ## -->
+						</div>
+					<!-- ## -->
+					
+					<!-- #(Photoset) -->
+						<div class="post photoset">
+							!(Photoset-500)
+							<!-- #(Caption) -->
+								<div class="caption">!(Caption)</div>
+							<!-- ## -->
+						</div>
+					<!-- ## -->
+					
+					<!-- #(Quote) -->
+						<div class="post quote">
+							"!(Quote)"
 
-						{block:Source}
-							<div class="source">{Source}</div>
-						{/block:Source}
-					</div>
-				{/block:Quote}
-				
-				{block:Link}
-					<div class="post link">
-						<a href="{URL}" class="link" {Target}>{Name}</a>
+							<!-- #(Source) -->
+								<div class="source">!(Source)</div>
+							<!-- ## -->
+						</div>
+					<!-- ## -->
+					
+					<!-- #(Link) -->
+						<div class="post link">
+							<a href="!(URL}" class="link" !(Target)>{Name)</a>
 
-						{block:Description}
-							<div class="description">{Description}</div>
-						{/block:Description}
-					</div>
-				{/block:Link}
-				
-				{block:Chat}
-					<div class="post chat">
-						{block:Title}
-							<h3><a href="{Permalink}">{Title}</a></h3>
-						{/block:Title}
+							<!-- #(Description) -->
+								<div class="description">!(Description)</div>
+							<!-- ## -->
+						</div>
+					<!-- ## -->
+					
+					<!-- #(Chat) -->
+						<div class="post chat">
+							<!-- #(Title) -->
+								<h3><a href="!(Permalink}">{Title)</a></h3>
+							<!-- ## -->
 
-						<ul class="chat">
-							{block:Lines}
-								<li class="{Alt} user_{UserNumber}">
-									{block:Label}
-										<span class="label">{Label}</span>
-									{/block:Label}{Line}
-								</li>
-							{/block:Lines}
+							<ul class="chat">
+								<!-- #(Lines) -->
+									<li class="!(Alt} user_{UserNumber)">
+										<!-- #(Label) -->
+											<span class="label">!(Label)</span>
+										<!-- ## -->
+									</li>
+								<!-- ## -->
+							</ul>
+						</div>
+					<!-- ## -->
+					
+					<!-- #(Video) -->
+						<div class="post video">
+							!(Video-500)
+							<!-- #(Caption) -->
+								<div class="caption">!(Caption)</div>
+							<!-- ## -->
+						</div>
+					<!-- ## -->
+					
+					<!-- #(Audio) -->
+						<div class="post audio">
+						!(AudioEmbed)
+						<!-- #(Caption) -->
+							<div class="caption">!(Caption)</div>
+						<!-- ## -->
+						</div>
+					<!-- ## -->
+					
+					<!-- #(ContentSource) -->
+						<p class="source">
+							<a href="!(SourceURL)">
+								<!-- #(SourceLogo) -->
+									<img src="!(BlackLogoURL)" width="!(LogoWidth)" height="!(LogoHeight)" alt="!(SourceTitle)" />
+								<!-- ## -->
+								<!-- #(NoSourceLogo) -->
+									!(SourceTitle)
+								<!-- ## -->
+							</a>
+						</p>
+					<!-- ## -->
+					
+					<nav class="nav-meta">
+						<ul class="cf">
+							<li class="date">
+								<!-- #(Date) -->
+								<a href="!(Permalink)">!(Month) !(DayOfMonth) !(Year)</a>
+								<!-- ## -->
+							</li>
+							<li>
+								!(LikeButton size="20" color="black")
+							</li>
+							<li>
+								!(ReblogButton size="20" color="black")
+							</li>
 						</ul>
-					</div>
-				{/block:Chat}
-				
-				{block:Video}
-					<div class="post video">
-						{Video-500}
-						{block:Caption}
-							<div class="caption">{Caption}</div>
-						{/block:Caption}
-					</div>
-				{/block:Video}
-				
-				{block:Audio}
-					<div class="post audio">
-					{AudioEmbed}
-					{block:Caption}
-						<div class="caption">{Caption}</div>
-					{/block:Caption}
-					</div>
-				{/block:Audio}
-			{/block:Posts}
-			
-			<div class="post">
-				<p>
-					<img src="http://40.media.tumblr.com/8e9b624a6a2349cd78ed9f738a165700/tumblr_ng546bKGVC1txj6yvo1_500.jpg" />
-				</p>
-				
-				<p>
-					<img src="http://41.media.tumblr.com/1e2f87401f71decf436f5735baf3a61b/tumblr_ng2mepkCte1tu7pweo1_500.jpg" />
-				</p>
-				
-				<nav class="nav-meta">
-					<ul class="cf">
-						<li class="date">
-							November 4th 2014
-						</li>
-						<li>
-							<a href="#"><i class="fa fa-retweet"></i></a>
-						</li>
-						<li>
-							<a href="#"><i class="fa fa-heart"></i></a>
-						</li>
-					</ul>
-				</nav>
-			</div>
-			<div class="post">
-				<h2><a href="#">Titre de l'interview</a></h2>
-				
-				<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan ante vitae suscipit ullamcorper. Vestibulum interdum massa eu enim hendrerit venenatis. Donec nec finibus nibh. Curabitur consequat neque dui, vitae consectetur tellus semper non. Fusce congue elit pellentesque tortor rutrum commodo. Nunc sit amet risus in est mattis maximus. Sed dictum lacus nulla, id maximus ligula condimentum vitae.</p>
-
-				<p>Integer faucibus nulla lectus, vitae convallis orci gravida vel. Donec metus velit, consectetur a mollis quis, vestibulum mollis massa. Maecenas ut neque sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras egestas vel justo id ultricies. Aliquam dictum sit amet enim id mattis. Donec ac nibh ut augue suscipit hendrerit. Vestibulum lobortis nisl nunc, nec condimentum justo maximus eget. Phasellus nec vulputate ligula, in lobortis tellus. Fusce nunc turpis, pharetra vel semper eget, lobortis id ante. Nam dictum dui in purus aliquam rutrum quis in diam. Phasellus vel nunc vestibulum, dapibus orci vitae, scelerisque erat. Sed suscipit laoreet turpis pellentesque porta. Pellentesque quis vestibulum ligula. </p>
-				
-				<nav class="nav-meta">
-					<ul class="cf">
-						<li class="date">
-							November 4th 2014
-						</li>
-						<li>
-							<a href="#"><i class="fa fa-retweet"></i></a>
-						</li>
-						<li>
-							<a href="#"><i class="fa fa-heart"></i></a>
-						</li>
-					</ul>
-				</nav>
-			</div>
+					</nav>
+				</div>
+			<!-- ## -->
 		</div>
 		
 	</div>
 	
 	<footer>
-		{block:PreviousPage}
-			<a href="{PreviousPage}">&#171; Previous</a>
-		{/block:PreviousPage}{block:NextPage}
-			<a href="{NextPage}">Next &#187;</a>
-		{/block:NextPage}
+		<!-- #(PreviousPage) -->
+			<a href="!(PreviousPage)">&#171; Previous</a>
+		<!-- ## --><!-- #(NextPage) -->
+			<a href="!(NextPage)">Next &#187;</a>
+		<!-- ## -->
 		
 		<a href="/archive">Archive</a>
 	</footer>
 	
 	<script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
-	<script src="js/app.js"></script>
+	<!-- +(src: "js/app.js") -->
 </body>
 </html>
