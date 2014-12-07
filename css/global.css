@@ -12,6 +12,7 @@ html, body {
 body {
 	font-family:Helvetica Neue, Helvetica, Arial, sans-serif;
 	font-size:70%;
+	padding:0 10px;
 }
 
 a {
@@ -60,6 +61,23 @@ div.title h1 {
 	font-size:3rem;
 }
 
+.nav-collapse {
+	display:none;
+}
+
+.nav-main {
+	display:block;
+}
+
+.nav-collapse li {
+	float:right;
+}
+
+.nav-collapse li.brand {
+	float:left;
+}
+
+
 .nav-header {
 	width:100%;
 	text-align:center;
@@ -93,6 +111,7 @@ div.title h1 {
 	letter-spacing:2px;
 }
 
+.nav-header ul li a.active,
 .nav-header ul li a:hover {
 	background:#000;
 	color:#FFF;
@@ -153,4 +172,32 @@ hr {
 	border:none;
 	border-bottom:1px solid #FFF;
 	margin:10px auto;
+}
+
+
+@media (max-width: 700px) {
+	
+	div.title h1 {
+		font-size:1rem;
+	}
+	
+	.nav-collapse {
+		display:block;
+	}
+	
+	.nav-main {
+		display:none;
+	}
+	
+	.nav-main li {
+		display:block;
+		width:50%;
+		float:right;
+	}
+	
+	.nav-main li a {
+		display:block;
+		width:100%;
+		text-align:right;
+	}
 }

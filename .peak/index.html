@@ -25,6 +25,7 @@ html, body {
 body {
 	font-family:Helvetica Neue, Helvetica, Arial, sans-serif;
 	font-size:70%;
+	padding:0 10px;
 }
 
 a {
@@ -73,6 +74,23 @@ div.title h1 {
 	font-size:3rem;
 }
 
+.nav-collapse {
+	display:none;
+}
+
+.nav-main {
+	display:block;
+}
+
+.nav-collapse li {
+	float:right;
+}
+
+.nav-collapse li.brand {
+	float:left;
+}
+
+
 .nav-header {
 	width:100%;
 	text-align:center;
@@ -106,6 +124,7 @@ div.title h1 {
 	letter-spacing:2px;
 }
 
+.nav-header ul li a.active,
 .nav-header ul li a:hover {
 	background:#000;
 	color:#FFF;
@@ -166,15 +185,47 @@ hr {
 	border:none;
 	border-bottom:1px solid #FFF;
 	margin:10px auto;
+}
+
+
+@media (max-width: 700px) {
+	
+	div.title h1 {
+		font-size:1rem;
+	}
+	
+	.nav-collapse {
+		display:block;
+	}
+	
+	.nav-main {
+		display:none;
+	}
+	
+	.nav-main li {
+		display:block;
+		width:50%;
+		float:right;
+	}
+	
+	.nav-main li a {
+		display:block;
+		width:100%;
+		text-align:right;
+	}
 }</style>
 </head>
 <body>
 	<div class="title">
-		<h1>STOLEN GROUND PUBLISHING</h1>
+		<h1><a href="/">STOLEN GROUND PUBLISHING</a></h1>
 	</div>
 	
 	<nav class="nav-header">
-		<ul>
+		<ul class="nav-collapse cf">
+			<li class="brand"><a href="/">STOLEN GROUND PUBLISHING</a></li>
+			<li><a href="#" class="dropdown"><i class="fa fa-navicon"></i></a></li>
+		</ul>
+		<ul class="nav-main cf">
 			<li>
 				<a href="/about/">About</a>
 			</li>
@@ -687,6 +738,19 @@ $window.on('scroll', function(ev) {
 	} else {
 		$nav.removeClass('nav-sticky');
 	}
-}).trigger('scroll');</script>
+}).trigger('scroll');
+
+$('.dropdown').on('click', function(ev) {
+	ev.preventDefault();
+	var $nav = $('.nav-main');
+	
+	if ($nav.is(':visible')) {
+		$(this).removeClass('active');
+		$nav.css('display', 'none');
+	} else {
+		$(this).addClass('active');
+		$nav.css('display', 'block');
+	}
+});</script>
 </body>
 </html>
