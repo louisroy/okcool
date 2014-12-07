@@ -9,13 +9,13 @@ npm install peak -g
 
 Copy .peakconfig.yml.sample, rename to .peakconfig.yml and add your Tumblr credentials.
 
-Watch theme
+Watch theme.
 
 ```
 peak watch
 ```
 
-Deploy theme
+Deploy theme.
 
 ```
 peak deploy
