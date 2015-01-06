@@ -85,7 +85,7 @@
 					<!-- #(Panorama) -->
 						<div class="post panorama">
 							!(LinkOpenTag)
-								<img src="!(PhotoURL-Panorama}" alt="{PhotoAlt)"/>
+								<img src="!(PhotoURL-Panorama)" alt="!(PhotoAlt)"/>
 							!(LinkCloseTag)
 							
 							<!-- #(Caption) -->
@@ -96,7 +96,7 @@
 					
 					<!-- #(Photoset) -->
 						<div class="post photoset">
-							!(Photoset-500)
+							!(Photoset-700)
 							<!-- #(Caption) -->
 								<div class="caption">!(Caption)</div>
 							<!-- ## -->
@@ -115,7 +115,7 @@
 					
 					<!-- #(Link) -->
 						<div class="post link">
-							<a href="!(URL}" class="link" !(Target)>{Name)</a>
+							<a href="!(URL)" class="link" !(Target)>!(Name)</a>
 
 							<!-- #(Description) -->
 								<div class="description">!(Description)</div>
@@ -126,12 +126,12 @@
 					<!-- #(Chat) -->
 						<div class="post chat">
 							<!-- #(Title) -->
-								<h3><a href="!(Permalink}">{Title)</a></h3>
+								<h3><a href="!(Permalink)">!(Title)</a></h3>
 							<!-- ## -->
 
 							<ul class="chat">
 								<!-- #(Lines) -->
-									<li class="!(Alt} user_{UserNumber)">
+									<li class="!(Alt) user_!(UserNumber)">
 										<!-- #(Label) -->
 											<span class="label">!(Label)</span>
 										<!-- ## -->
@@ -180,10 +180,10 @@
 								<!-- ## -->
 							</li>
 							<li>
-								!(LikeButton size="20" color="black")
+								{LikeButton size="15" color="black"}
 							</li>
 							<li>
-								!(ReblogButton size="20" color="black")
+								{ReblogButton size="15" color="black"}
 							</li>
 						</ul>
 					</nav>

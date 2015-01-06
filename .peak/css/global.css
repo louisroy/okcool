@@ -12,7 +12,6 @@ html, body {
 body {
 	font-family:Helvetica Neue, Helvetica, Arial, sans-serif;
 	font-size:70%;
-	padding:0 10px;
 }
 
 a {
@@ -43,6 +42,9 @@ div.title {
 	color:#FFF;
 	position:relative;
 	text-align:center;
+	background-image:url(img/logo.svg);
+	background-repeat:no-repeat;
+	background-size:contain;
 }
 
 div.title:before {
@@ -59,6 +61,14 @@ div.title h1 {
 	background:#FFF;
 	color:#000;
 	font-size:3rem;
+}
+
+h2 {
+	font-size:1.2rem;
+}
+
+h3 {
+	font-size:1rem;
 }
 
 .nav-collapse {
@@ -104,7 +114,7 @@ div.title h1 {
 	display:inline-block;
 	padding:10px 15px;
 	color:#000;
-	font-size:0.9rem;
+	font-size:0.8rem;
 	text-decoration:none;
 	color:#000;
 	text-transform:uppercase;
@@ -120,11 +130,16 @@ div.title h1 {
 div.content {
 	margin:0 auto;
 	max-width:720px;
+	padding:0 10px;
 }
 
 .posts img {
 	width:100%;
 	height:auto;
+}
+
+.post.photoset iframe {
+	width:100%;
 }
 
 .nav-meta {
@@ -164,7 +179,7 @@ div.content {
 }
 
 .nav-meta ul li a {
-	font-size:1.2rem;
+	font-size:1rem;
 }
 
 hr {
@@ -176,7 +191,6 @@ hr {
 
 
 @media (max-width: 700px) {
-	
 	div.title h1 {
 		font-size:1rem;
 	}
@@ -187,6 +201,8 @@ hr {
 	
 	.nav-main {
 		display:none;
+		border-top:1px solid #000;
+		border-bottom:1px solid #000;
 	}
 	
 	.nav-main li {
