@@ -254,24 +254,11 @@ hr {
 	}
 }
 
-@media (min-width:521px) and (max-width: 720px) {
-	.post.photoset.photoset-500 {
-		display:block;
-	}
-}
-
-@media (min-width:421px) and (max-width: 520px) {
-	.post.photoset.photoset-400 {
-		display:block;
-	}
-}
-
-@media (max-width: 420px) {
+@media (max-width: 720px) {
 	.post.photoset.photoset-250 {
 		display:block;
 	}
 }
-
 
 @media (max-width: 720px) {
 	div.title h1 {
