@@ -1,16 +1,24 @@
 var $window = $(window);
 var $nav = $('.nav-header');
+var navPosition = $nav.position().top;
 
 $window.on('scroll', function(ev) {
-	var windowHeight = $window.height();
-	var percent = $window.scrollTop() / (windowHeight - $nav.height());
-	
-	if (percent >=1) {
+	if ($window.scrollTop() >= navPosition) {
 		$nav.addClass('nav-sticky');
 	} else {
 		$nav.removeClass('nav-sticky');
 	}
 }).trigger('scroll');
+
+$window.on('resize', function() {
+	if ($nav.hasClass('nav-sticky')) {
+		$nav.removeClass('nav-sticky');
+		navPosition = $nav.position().top;
+		$nav.addClass('nav-sticky');
+	} else {
+		navPosition = $nav.position().top;
+	}
+}).trigger('resize');
 
 $('.dropdown').on('click', function(ev) {
 	ev.preventDefault();
