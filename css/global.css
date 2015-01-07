@@ -124,11 +124,15 @@ h3 {
 	text-align:center;
 }
 
-.nav-header.nav-sticky {
+.nav-sticky .nav-header {
 	position:fixed;
 	top:0;
 	left:0;
 	background:#FFF;
+}
+
+.nav-sticky .content {
+	margin-top:36px;
 }
 
 .nav-header ul {

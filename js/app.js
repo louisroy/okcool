@@ -1,20 +1,21 @@
 var $window = $(window);
 var $nav = $('.nav-header');
+var $body = $('body');
 var navPosition = $nav.position().top;
 
 $window.on('scroll', function(ev) {
 	if ($window.scrollTop() >= navPosition) {
-		$nav.addClass('nav-sticky');
+		$body.addClass('nav-sticky');
 	} else {
-		$nav.removeClass('nav-sticky');
+		$body.removeClass('nav-sticky');
 	}
 }).trigger('scroll');
 
 $window.on('resize', function() {
-	if ($nav.hasClass('nav-sticky')) {
-		$nav.removeClass('nav-sticky');
+	if ($body.hasClass('nav-sticky')) {
+		$body.removeClass('nav-sticky');
 		navPosition = $nav.position().top;
-		$nav.addClass('nav-sticky');
+		$body.addClass('nav-sticky');
 	} else {
 		navPosition = $nav.position().top;
 	}
