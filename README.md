@@ -1,6 +1,8 @@
 Stolen Ground Tumblr theme
 ============
 
+Main branch is gh-pages.
+
 Install [Peak](https://github.com/nporteschaikin/peak)
 
 ```
