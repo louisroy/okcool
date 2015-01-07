@@ -2,234 +2,447 @@
 <html>
 <head>
 	<title>!(Title)</title>
-	
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
+
 	<link rel="shortcut icon" href="!(Favicon)">
 	<link rel="alternate" type="application/rss+xml" href="!(RSS)">
-	
-	<!-- #(Description) -->
-		<meta name="description" content="!(MetaDescription)" />
+
+	<!-- Apple touch icon, the icon for when you save bookmarks on your ipad or iphone" -->
+	<link rel="apple-touch-icon-precomposed" href="!(PortraitURL-128)">
+
+	<!-- Win8 tiles -->
+	<meta name="msapplication-TileImage" content="!(PortraitURL-128)">
+	<!-- Tumblr Theme tag, defaults to your avatar image -->
+	<meta name="msapplication-TileColor" content="#ffffff" />
+	<!-- Pick a hex color, this one's yellow -->
+	<meta name="application-name" content="!(PlaintextTitle)" />
+	<!-- Tumblr Theme tag, defaults to your Tumblr Blog Title -->
+
+	<!-- IE11 tiles -->
+	<meta name="msapplication-square70x70logo" content="!(PortraitURL-128)" />
+	<meta name="msapplication-square150x150logo" content="!(PortraitURL-128)" />
+
+	<!-- #(IndexPage) -->
+		<!-- Your title & description Meta tags for the index pages of your tumblr, including Tumblr theme tags for search and tag pages-->
+		<title><!-- #(TagPage) -->&quot;!(PlaintextTag)&quot; - <!-- ## --><!-- #(SearchPage) -->!(lang:Search results for SearchQuery) - <!-- ## -->!(Title)</title>
+		<meta name="Description" content="!(MetaDescription)" />
+	<!-- ## -->
+
+	<!-- #(PermalinkPage) -->
+		<!-- Your title & description Meta tags for the permalink (individual post) pages of your tumblr, The !(PostSummary) tag is effective because it will still insert an indvividual post title if available or if your post type doesn't have a title, it will pull copy from your post's caption or description-->
+		<title><!-- #(PostSummary) -->!(PlaintextPostSummary) - <!-- ## -->!(Title)</title>
+		<meta name="Description" content="!(MetaDescription)" />
 	<!-- ## -->
 	
-	<link rel="stylesheet" type="text/css" media="all" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" />
+	<!-- #(PermalinkPage) -->
+		<!-- #(Posts) -->
+			<!-- #(Date) -->
+				<!-- Canonical h5bp.com/docs/head-Tips/#urls -->
+				<link rel="canonical" href="!(Permalink)">
+				<!-- Shortlink h5bp.com/docs/head-Tips/#urls -->
+				<link rel="shortlink" href="!(ShortURL)">
+			<!-- ## -->
+		<!-- ## -->
+	<!-- ## -->
+
+	<!-- Facebook OpenGraph -->
+	<meta property="og:site_name" content="!(Title)" />
+	
+	<!-- #(IndexPage) -->
+		<meta property="og:title" content="<!-- #(TagPage) -->&quot;!(PlaintextTag)&quot; - <!-- ## --><!-- #(SearchPage) -->!(lang:Search results for SearchQuery) - <!-- ## -->!(Title)" />
+		<meta property="og:url" content="!(blogURL)<!-- #(TagPage) -->tagged/!(URLSafeTag)<!-- ## -->" />
+		<meta property="og:type" content="blog" />
+		<meta property="og:description" content="!(MetaDescription) <!-- #(TagPage) -->!(PlaintextDescription)<!-- ## -->" />
+		<meta property="og:image" content="http://louisroy.github.io/stolenground/img/share.png" />
+	<!-- ## -->
+
+	<!-- #(PermalinkPage) -->
+		<meta property="og:url" content="!(Permalink)" />
+		<meta property="og:type" content="article" />
+	
+		<!-- #(Posts) -->
+			<!-- #(Text) -->
+				<!-- #(Title) -->
+					<meta property="og:title" content="!(PlaintextTitle)" />
+				<!-- ## -->
+				<meta property="og:description" content="!(PlaintextBody)" />
+				<meta property="og:image" content="!(PortraitURL-128)" />
+			<!-- ## -->
+		
+			<!-- #(Photo) -->
+				<meta property="og:image" content="!(PhotoURL-HighRes)" />
+				<!-- #(Caption) -->
+					<meta property="og:description" content="!(PlaintextCaption)" />
+				<!-- ## -->
+			<!-- ## -->
+		
+			<!-- #(Photoset) -->
+				<!-- #(Photos) -->
+					<meta property="og:image" content="!(PhotoURL-HighRes)" />
+				<!-- ## -->
+				<!-- #(Caption) -->
+					<meta property="og:description" content="!(PlaintextCaption)" />
+				<!-- ## -->
+			<!-- ## -->
+		
+			<!-- #(Quote) -->
+				<meta property="og:title" content="!(PlaintextQuote)" />
+				<meta property="og:description" content="!(PlaintextSource)" />
+				<meta property="og:image" content="!(PortraitURL-128)" />
+			<!-- ## -->
+		
+			<!-- #(Link) -->
+				<meta property="og:title" content="!(PlaintextName)" />
+				<meta property="og:description" content="!(PlaintextDescription)" />
+				<!-- #(Thumbnail) -->
+					<meta property="og:image" content="!(Thumbnail)" />
+				<!-- ## -->
+			<!-- ## -->
+		
+			<!-- #(Chat) -->
+				<meta property="og:title" content="!(PlaintextTitle)" />
+				<meta property="og:description" content="<!-- #(Lines) --><!-- #(Label) -->!(Label): <!-- ## -->!(Line) &bull; <!-- ## -->" />
+				<meta property="og:image" content="!(PortraitURL-128)" />
+			<!-- ## -->
+		
+			<!-- #(Audio) -->
+				<meta property="og:title" content="<!-- #(Artist) -->!(Artist) - <!-- ## --><!-- #(TrackName) -->!(TrackName)<!-- ## -->" />
+				<meta property="og:description" content="!(PlaintextCaption)" />
+				<!-- #(AlbumArt) -->
+					<meta property="og:image" content="!(AlbumArtURL)" />
+				<!-- ## -->
+			<!-- ## -->
+		
+			<!-- #(Video) -->
+				<!-- #(Caption) -->
+					<meta property="og:description" content="!(PlaintextCaption)" />
+				<!-- ## -->
+				<!-- #(VideoThumbnail) -->
+					<meta property="og:image" content="!(VideoThumbnailURL)" />
+				<!-- ## -->
+			<!-- ## -->
+		
+			<!-- #(Answer) -->
+				<meta property="og:title" content="!(PlaintextQuestion)" />
+				<meta property="og:description" content="!(PlaintextAnswer)" />
+				<meta property="og:image" content="!(PortraitURL-128)" />
+			<!-- ## -->
+		<!-- ## -->
+	<!-- ## -->
+	
+	<!-- Twitter Cards -->
+
+	<!-- #(PermalinkPage) -->
+		<!-- replace with your twitter username. include the '@' symbol too -->
+		<meta name="twitter:url" content="!(Permalink)" />
+		<meta name="twitter:site" content="@stolengroundpublishing">
+		
+		<!-- #(Posts) -->
+			<!-- #(Text) -->
+				<meta name="twitter:card" content="summary">
+				<!-- #(Title) -->
+					<meta name="twitter:title" content="!(PlaintextTitle)" />
+				<!-- ## -->
+				<meta name="twitter:description" content="!(PlaintextBody)" />
+				<meta name="twitter:image" content="!(PortraitURL-128)" />
+			<!-- ## -->
+		
+			<!-- #(Photo) -->
+				<meta name="twitter:card" content="photo">
+				<meta name="twitter:image" content="!(PhotoURL-500)" />
+				<!-- #(Caption) -->
+					<meta name="twitter:description" content="!(PlaintextCaption)" />
+				<!-- ## -->
+			<!-- ## -->
+		
+			<!-- #(Photoset) -->
+				<meta name="twitter:card" content="photo">
+				<!-- #(Photos) -->
+					<meta name="twitter:image" content="!(PhotoURL-500)" />
+				<!-- ## -->
+				<!-- #(Caption) -->
+					<meta name="twitter:description" content="!(PlaintextCaption)" />
+				<!-- ## -->
+			<!-- ## -->
+		
+			<!-- #(Quote) -->
+				<meta name="twitter:card" content="summary">
+				<meta name="twitter:title" content="!(PlaintextQuote)" />
+				<meta name="twitter:description" content="!(PlaintextSource)" />
+				<meta name="twitter:image" content="!(PortraitURL-128)" />
+			<!-- ## -->
+		
+			<!-- #(Link) -->
+				<meta name="twitter:card" content="summary">
+				<meta name="twitter:title" content="!(PlaintextName)" />
+				<meta name="twitter:description" content="!(PlaintextDescription)" />
+				<!-- #(Thumbnail) -->
+					<meta name="twitter:image" content="!(Thumbnail)" />
+				<!-- ## -->
+			<!-- ## -->
+		
+			<!-- #(Chat) -->
+				<meta name="twitter:card" content="summary">
+				<meta name="twitter:title" content="!(PlaintextTitle)" />
+				<meta name="twitter:description" content="<!-- #(Lines) --><!-- #(Label) -->!(Label): <!-- ## -->!(Line) &bull; <!-- ## -->" />
+				<meta name="twitter:image" content="!(PortraitURL-128)" />
+			<!-- ## -->
+		
+			<!-- #(Audio) -->
+				<meta name="twitter:card" content="summary">
+				<meta name="twitter:title" content="<!-- #(Artist) -->!(Artist) - <!-- ## --><!-- #(TrackName) -->!(TrackName)<!-- ## -->" />
+				<meta name="twitter:description" content="!(PlaintextCaption)" />
+				<!-- #(AlbumArt) -->
+					<meta name="twitter:image" content="!(AlbumArtURL)" />
+				<!-- ## -->
+			<!-- ## -->
+		
+			<!-- #(Video) -->
+				<meta name="twitter:card" content="summary">
+				<meta name="twitter:title" content="!(PlaintextTitle)" />
+				<!-- #(Caption) -->
+					<meta name="twitter:description" content="!(PlaintextCaption)" />
+				<!-- ## -->
+				<!-- #(VideoThumbnail) -->
+					<meta name="twitter:image" content="!(VideoThumbnailURL)" />
+				<!-- ## -->
+			<!-- ## -->
+		
+			<!-- #(Answer) -->
+				<meta name="twitter:card" content="summary">
+				<meta name="twitter:title" content="!(PlaintextQuestion)" />
+				<meta name="twitter:description" content="!(PlaintextAnswer)" />
+				<meta name="twitter:image" content="!(PortraitURL-128)" />
+			<!-- ## -->
+		<!-- ## -->
+	
+	<!-- ## -->
+
+	<link rel="stylesheet" type="text/css" media="all"
+	      href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" />
 	<!-- +(src: '/css/global.css' media: 'all') -->
 </head>
 <body>
-	<div class="title">
-		<h1><a href="/">!(Title)</a></h1>
-	</div>
-	
-	<nav class="nav-header">
-		<ul class="nav-collapse cf">
-			<li class="brand"><a href="/">!(Title)</a></li>
-			<li><a href="#" class="dropdown"><i class="fa fa-navicon"></i></a></li>
-		</ul>
-		<ul class="nav-main cf">
-			<li class="home">
-				<a href="/">Home</a>
-			</li>
-			<li>
-				<a href="/about/">About</a>
-			</li>
-			<li>
-				<a href="/interviews">Interviews</a>
-			</li>
-			<li>
-				<a href="/features/">Features</a>
-			</li>
-			<li>
-				<a href="/submission/">Submit</a>
-			</li>
-			<li>
-				<a href="/links/">Links</a>
-			</li>
-			<li>
-				<a href="http://stolenground.storenvy.com/" target="_blank">Store</a>
-			</li>
-			<li>
-				<a title="Facebook" href="https://www.facebook.com/stolenground" target="_blank"><i class="fa fa-facebook"></i></a>
-			</li>
-			<li>
-				<a title="Flickr" href="https://www.flickr.com/groups/stolenground/" target="_blank"><i class="fa fa-flickr"></i></a>
-			</li>
-			<li>
-				<a title="Instagram" href="http://instagram.com/_deadhands" target="_blank"><i class="fa fa-instagram"></i></a>
-			</li>
-			<li>
-				<a title="Email" href="mailto:stolengroundpublishing@gmail.com"><i class="fa fa-envelope"></i></a>
-			</li>
-		</ul>
-	</nav>
-	
-	<hr />
-	
-	<div class="content">
-		<div class="posts">
-			<!-- #(Posts) -->
-				<div class="post">
-					<!-- #(Text) -->
-						<div class="post text">
-							<!-- #(Title) -->
-								<h3><a href="!(Permalink)">!(Title)</a></h3>
-							<!-- ## -->
-							!(Body)
-						</div>
-					<!-- ## -->
-					
-					<!-- #(Photo) -->
-						<div class="post photo">
-							<img src="!(PhotoURL-500)" alt="!(PhotoAlt)"/>
+<div class="title">
+	<h1><a href="/">!(Title)</a></h1>
+</div>
 
-							<!-- #(Caption) -->
-								<div class="caption">!(Caption)</div>
-							<!-- ## -->
-						</div>
-					<!-- ## -->
-					
-					<!-- #(Panorama) -->
-						<div class="post panorama">
-							!(LinkOpenTag)
-								<img src="!(PhotoURL-Panorama)" alt="!(PhotoAlt)"/>
-							!(LinkCloseTag)
-							
-							<!-- #(Caption) -->
-								<div class="caption">!(Caption)</div>
-							<!-- ## -->
-						</div>
-					<!-- ## -->
-					
-					<!-- #(Photoset) -->
-						<div class="post photoset photoset-700">
-							!(Photoset-700)
-							<!-- #(Caption) -->
-								<div class="caption">!(Caption)</div>
-							<!-- ## -->
-						</div>
-						
-						<div class="post photoset photoset-500">
-							!(Photoset-500)
-							<!-- #(Caption) -->
-								<div class="caption">!(Caption)</div>
-							<!-- ## -->
-						</div>
-						
-						<div class="post photoset photoset-400">
-							!(Photoset-400)
-							<!-- #(Caption) -->
-								<div class="caption">!(Caption)</div>
-							<!-- ## -->
-						</div>
-						
-						<div class="post photoset photoset-250">
-							!(Photoset-250)
-							<!-- #(Caption) -->
-								<div class="caption">!(Caption)</div>
-							<!-- ## -->
-						</div>
-					<!-- ## -->
-					
-					<!-- #(Quote) -->
-						<div class="post quote">
-							"!(Quote)"
+<nav class="nav-header">
+	<ul class="nav-collapse cf">
+		<li class="brand"><a href="/">!(Title)</a></li>
+		<li><a href="#" class="dropdown"><i class="fa fa-navicon"></i></a></li>
+	</ul>
+	<ul class="nav-main cf">
+		<li class="home">
+			<a href="/">Home</a>
+		</li>
+		<li>
+			<a href="/about/">About</a>
+		</li>
+		<li>
+			<a href="/interviews">Interviews</a>
+		</li>
+		<li>
+			<a href="/features/">Features</a>
+		</li>
+		<li>
+			<a href="/submission/">Submit</a>
+		</li>
+		<li>
+			<a href="/links/">Links</a>
+		</li>
+		<li>
+			<a href="http://stolenground.storenvy.com/" target="_blank">Store</a>
+		</li>
+		<li>
+			<a title="Facebook" href="https://www.facebook.com/stolenground" target="_blank"><i
+					class="fa fa-facebook"></i></a>
+		</li>
+		<li>
+			<a title="Flickr" href="https://www.flickr.com/groups/stolenground/" target="_blank"><i
+					class="fa fa-flickr"></i></a>
+		</li>
+		<li>
+			<a title="Instagram" href="http://instagram.com/_deadhands" target="_blank"><i class="fa fa-instagram"></i></a>
+		</li>
+		<li>
+			<a title="Email" href="mailto:stolengroundpublishing@gmail.com"><i class="fa fa-envelope"></i></a>
+		</li>
+	</ul>
+</nav>
 
-							<!-- #(Source) -->
-								<div class="source">!(Source)</div>
-							<!-- ## -->
-						</div>
-					<!-- ## -->
-					
-					<!-- #(Link) -->
-						<div class="post link">
-							<a href="!(URL)" class="link" !(Target)>!(Name)</a>
+<hr/>
 
-							<!-- #(Description) -->
-								<div class="description">!(Description)</div>
-							<!-- ## -->
-						</div>
-					<!-- ## -->
-					
-					<!-- #(Chat) -->
-						<div class="post chat">
-							<!-- #(Title) -->
-								<h3><a href="!(Permalink)">!(Title)</a></h3>
-							<!-- ## -->
-
-							<ul class="chat">
-								<!-- #(Lines) -->
-									<li class="!(Alt) user_!(UserNumber)">
-										<!-- #(Label) -->
-											<span class="label">!(Label)</span>
-										<!-- ## -->
-									</li>
-								<!-- ## -->
-							</ul>
-						</div>
-					<!-- ## -->
-					
-					<!-- #(Video) -->
-						<div class="post video">
-							!(Video-500)
-							<!-- #(Caption) -->
-								<div class="caption">!(Caption)</div>
-							<!-- ## -->
-						</div>
-					<!-- ## -->
-					
-					<!-- #(Audio) -->
-						<div class="post audio">
-						!(AudioEmbed)
-						<!-- #(Caption) -->
-							<div class="caption">!(Caption)</div>
-						<!-- ## -->
-						</div>
-					<!-- ## -->
-					
-					<!-- #(ContentSource) -->
-						<p class="source">
-							<a href="!(SourceURL)">
-								<!-- #(SourceLogo) -->
-									<img src="!(BlackLogoURL)" width="!(LogoWidth)" height="!(LogoHeight)" alt="!(SourceTitle)" />
-								<!-- ## -->
-								<!-- #(NoSourceLogo) -->
-									!(SourceTitle)
-								<!-- ## -->
-							</a>
-						</p>
-					<!-- ## -->
-					
-					<nav class="nav-meta">
-						<ul class="cf">
-							<li class="date">
-								<!-- #(Date) -->
-								<a href="!(Permalink)">!(Month) !(DayOfMonth) !(Year)</a>
-								<!-- ## -->
-							</li>
-							<li>
-								{LikeButton size="15" color="black"}
-							</li>
-							<li>
-								{ReblogButton size="15" color="black"}
-							</li>
-						</ul>
-					</nav>
-				</div>
+<div class="content">
+	<div class="posts">
+		<!-- #(Posts) -->
+		<div class="post">
+			<!-- #(Text) -->
+			<div class="post text">
+				<!-- #(Title) -->
+				<h3><a href="!(Permalink)">!(Title)</a></h3>
+				<!-- ## -->
+				!(Body)
+			</div>
 			<!-- ## -->
+
+			<!-- #(Photo) -->
+			<div class="post photo">
+				<img src="!(PhotoURL-500)" alt="!(PhotoAlt)" />
+
+				<!-- #(Caption) -->
+				<div class="caption">!(Caption)</div>
+				<!-- ## -->
+			</div>
+			<!-- ## -->
+
+			<!-- #(Panorama) -->
+			<div class="post panorama">
+				!(LinkOpenTag)
+				<img src="!(PhotoURL-Panorama)" alt="!(PhotoAlt)" />
+				!(LinkCloseTag)
+
+				<!-- #(Caption) -->
+				<div class="caption">!(Caption)</div>
+				<!-- ## -->
+			</div>
+			<!-- ## -->
+
+			<!-- #(Photoset) -->
+			<div class="post photoset photoset-700">
+				!(Photoset-700)
+				<!-- #(Caption) -->
+				<div class="caption">!(Caption)</div>
+				<!-- ## -->
+			</div>
+
+			<div class="post photoset photoset-500">
+				!(Photoset-500)
+				<!-- #(Caption) -->
+				<div class="caption">!(Caption)</div>
+				<!-- ## -->
+			</div>
+
+			<div class="post photoset photoset-400">
+				!(Photoset-400)
+				<!-- #(Caption) -->
+				<div class="caption">!(Caption)</div>
+				<!-- ## -->
+			</div>
+
+			<div class="post photoset photoset-250">
+				!(Photoset-250)
+				<!-- #(Caption) -->
+				<div class="caption">!(Caption)</div>
+				<!-- ## -->
+			</div>
+			<!-- ## -->
+
+			<!-- #(Quote) -->
+			<div class="post quote">
+				"!(Quote)"
+
+				<!-- #(Source) -->
+				<div class="source">!(Source)</div>
+				<!-- ## -->
+			</div>
+			<!-- ## -->
+
+			<!-- #(Link) -->
+			<div class="post link">
+				<a href="!(URL)" class="link" !(Target)>!(Name)</a>
+
+				<!-- #(Description) -->
+				<div class="description">!(Description)</div>
+				<!-- ## -->
+			</div>
+			<!-- ## -->
+
+			<!-- #(Chat) -->
+			<div class="post chat">
+				<!-- #(Title) -->
+				<h3><a href="!(Permalink)">!(Title)</a></h3>
+				<!-- ## -->
+
+				<ul class="chat">
+					<!-- #(Lines) -->
+					<li class="!(Alt) user_!(UserNumber)">
+						<!-- #(Label) -->
+						<span class="label">!(Label)</span>
+						<!-- ## -->
+					</li>
+					<!-- ## -->
+				</ul>
+			</div>
+			<!-- ## -->
+
+			<!-- #(Video) -->
+			<div class="post video">
+				!(Video-500)
+				<!-- #(Caption) -->
+				<div class="caption">!(Caption)</div>
+				<!-- ## -->
+			</div>
+			<!-- ## -->
+
+			<!-- #(Audio) -->
+			<div class="post audio">
+				!(AudioEmbed)
+				<!-- #(Caption) -->
+				<div class="caption">!(Caption)</div>
+				<!-- ## -->
+			</div>
+			<!-- ## -->
+
+			<!-- #(ContentSource) -->
+			<p class="source">
+				<a href="!(SourceURL)">
+					<!-- #(SourceLogo) -->
+					<img src="!(BlackLogoURL)" width="!(LogoWidth)" height="!(LogoHeight)" alt="!(SourceTitle)" />
+					<!-- ## -->
+					<!-- #(NoSourceLogo) -->
+					!(SourceTitle)
+					<!-- ## -->
+				</a>
+			</p>
+			<!-- ## -->
+
+			<nav class="nav-meta">
+				<ul class="cf">
+					<li class="date">
+						<!-- #(Date) -->
+						<a href="!(Permalink)">!(Month) !(DayOfMonth) !(Year)</a>
+						<!-- ## -->
+					</li>
+					<li>
+						!(LikeButton size="15" color="black")
+					</li>
+					<li>
+						!(ReblogButton size="15" color="black")
+					</li>
+				</ul>
+			</nav>
 		</div>
-		
-	</div>
-	
-	<footer class="footer">
-		<!-- #(PreviousPage) -->
-			<a href="!(PreviousPage)">&lsaquo; Previous</a>
-		<!-- ## --><!-- #(NextPage) -->
-			<a href="!(NextPage)">Next &rsaquo;</a>
 		<!-- ## -->
-		
-		<a href="/archive">Archive</a>
-	</footer>
-	
-	<script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
-	<!-- +(src: "js/app.js") -->
+	</div>
+
+</div>
+
+<footer class="footer">
+	<!-- #(PreviousPage) -->
+	<a href="!(PreviousPage)">&lsaquo; Previous</a>
+	<!-- ## --><!-- #(NextPage) -->
+	<a href="!(NextPage)">Next &rsaquo;</a>
+	<!-- ## -->
+
+	<a href="/archive">Archive</a>
+</footer>
+
+<script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+<!-- +(src: "js/app.js") -->
 </body>
 </html>

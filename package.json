@@ -4,9 +4,7 @@
   "description": "stolenground\r ============",
   "main": "index.js",
   "dependencies": {},
-  "devDependencies": {
-    "peak": "^0.4.3"
-  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
