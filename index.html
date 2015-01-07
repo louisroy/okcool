@@ -57,7 +57,7 @@
 		<meta property="og:url" content="!(blogURL)<!-- #(TagPage) -->tagged/!(URLSafeTag)<!-- ## -->" />
 		<meta property="og:type" content="blog" />
 		<meta property="og:description" content="!(MetaDescription) <!-- #(TagPage) -->!(PlaintextDescription)<!-- ## -->" />
-		<meta property="og:image" content="http://louisroy.github.io/stolenground/img/share.png" />
+		<meta property="og:image" content="http://cdn.rawgit.com/louisroy/stolenground/gh-pages/img/share.png" />
 	<!-- ## -->
 
 	<!-- #(PermalinkPage) -->
@@ -70,7 +70,7 @@
 					<meta property="og:title" content="!(PlaintextTitle)" />
 				<!-- ## -->
 				<meta property="og:description" content="!(PlaintextBody)" />
-				<meta property="og:image" content="!(PortraitURL-128)" />
+				<meta property="og:image" content="http://cdn.rawgit.com/louisroy/stolenground/gh-pages/img/share.png" />
 			<!-- ## -->
 		
 			<!-- #(Photo) -->
@@ -92,7 +92,7 @@
 			<!-- #(Quote) -->
 				<meta property="og:title" content="!(PlaintextQuote)" />
 				<meta property="og:description" content="!(PlaintextSource)" />
-				<meta property="og:image" content="!(PortraitURL-128)" />
+				<meta property="og:image" content="http://cdn.rawgit.com/louisroy/stolenground/gh-pages/img/share.png" />
 			<!-- ## -->
 		
 			<!-- #(Link) -->
@@ -106,7 +106,7 @@
 			<!-- #(Chat) -->
 				<meta property="og:title" content="!(PlaintextTitle)" />
 				<meta property="og:description" content="<!-- #(Lines) --><!-- #(Label) -->!(Label): <!-- ## -->!(Line) &bull; <!-- ## -->" />
-				<meta property="og:image" content="!(PortraitURL-128)" />
+				<meta property="og:image" content="http://cdn.rawgit.com/louisroy/stolenground/gh-pages/img/share.png" />
 			<!-- ## -->
 		
 			<!-- #(Audio) -->
@@ -129,17 +129,25 @@
 			<!-- #(Answer) -->
 				<meta property="og:title" content="!(PlaintextQuestion)" />
 				<meta property="og:description" content="!(PlaintextAnswer)" />
-				<meta property="og:image" content="!(PortraitURL-128)" />
+				<meta property="og:image" content="http://cdn.rawgit.com/louisroy/stolenground/gh-pages/img/share.png" />
 			<!-- ## -->
 		<!-- ## -->
 	<!-- ## -->
 	
 	<!-- Twitter Cards -->
-
+	
+	<!-- replace with your twitter username. include the '@' symbol too -->
+	<meta name="twitter:url" content="!(Permalink)" />
+	<meta name="twitter:site" content="@stolengroundpublishing">
+	
+	<!-- #(IndexPage) -->
+		<meta name="twitter:card" content="summary">
+		<meta name="twitter:title" content="<!-- #(TagPage) -->&quot;!(PlaintextTag)&quot; - <!-- ## --><!-- #(SearchPage) -->!(lang:Search results for SearchQuery) - <!-- ## -->!(Title)" />
+		<meta name="twitter:description" content="!(MetaDescription) <!-- #(TagPage) -->!(PlaintextDescription)<!-- ## -->" />
+		<meta name="twitter:image" content="http://cdn.rawgit.com/louisroy/stolenground/gh-pages/img/share.png" />
+	<!-- ## -->
+	
 	<!-- #(PermalinkPage) -->
-		<!-- replace with your twitter username. include the '@' symbol too -->
-		<meta name="twitter:url" content="!(Permalink)" />
-		<meta name="twitter:site" content="@stolengroundpublishing">
 		
 		<!-- #(Posts) -->
 			<!-- #(Text) -->
@@ -148,7 +156,7 @@
 					<meta name="twitter:title" content="!(PlaintextTitle)" />
 				<!-- ## -->
 				<meta name="twitter:description" content="!(PlaintextBody)" />
-				<meta name="twitter:image" content="!(PortraitURL-128)" />
+				<meta name="twitter:image" content="http://cdn.rawgit.com/louisroy/stolenground/gh-pages/img/share.png" />
 			<!-- ## -->
 		
 			<!-- #(Photo) -->
@@ -173,7 +181,7 @@
 				<meta name="twitter:card" content="summary">
 				<meta name="twitter:title" content="!(PlaintextQuote)" />
 				<meta name="twitter:description" content="!(PlaintextSource)" />
-				<meta name="twitter:image" content="!(PortraitURL-128)" />
+				<meta name="twitter:image" content="http://cdn.rawgit.com/louisroy/stolenground/gh-pages/img/share.png" />
 			<!-- ## -->
 		
 			<!-- #(Link) -->
@@ -189,7 +197,7 @@
 				<meta name="twitter:card" content="summary">
 				<meta name="twitter:title" content="!(PlaintextTitle)" />
 				<meta name="twitter:description" content="<!-- #(Lines) --><!-- #(Label) -->!(Label): <!-- ## -->!(Line) &bull; <!-- ## -->" />
-				<meta name="twitter:image" content="!(PortraitURL-128)" />
+				<meta name="twitter:image" content="http://cdn.rawgit.com/louisroy/stolenground/gh-pages/img/share.png" />
 			<!-- ## -->
 		
 			<!-- #(Audio) -->
@@ -216,7 +224,7 @@
 				<meta name="twitter:card" content="summary">
 				<meta name="twitter:title" content="!(PlaintextQuestion)" />
 				<meta name="twitter:description" content="!(PlaintextAnswer)" />
-				<meta name="twitter:image" content="!(PortraitURL-128)" />
+				<meta name="twitter:image" content="http://cdn.rawgit.com/louisroy/stolenground/gh-pages/img/share.png" />
 			<!-- ## -->
 		<!-- ## -->
 	
@@ -419,10 +427,10 @@
 						<!-- ## -->
 					</li>
 					<li>
-						!(LikeButton size="15" color="black")
+						{LikeButton size="15" color="black"}
 					</li>
 					<li>
-						!(ReblogButton size="15" color="black")
+						{ReblogButton size="15" color="black"}
 					</li>
 				</ul>
 			</nav>
