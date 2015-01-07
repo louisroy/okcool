@@ -96,10 +96,14 @@ h3 {
 	background-size:20px 20px;
 	background-position:center center;
 	text-indent:-10000px;
+	padding:10px 20px;
 }
 
 .nav-main .home a:hover {
 	background-image:url(http://louisroy.github.io/stolenground/img/flag-white.svg);
+	background-repeat:no-repeat;
+	background-size:20px 20px;
+	background-position:center center;
 }
 
 .nav-collapse li {
@@ -281,7 +285,7 @@ hr {
 		border-bottom:1px solid #000;
 	}
 	
-	.nav-main li:first-child {
+	.nav-main li.home {
 		display:none;
 	}
 	
