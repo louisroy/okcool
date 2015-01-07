@@ -228,6 +228,7 @@ hr {
 	font-size:0.8rem;
 	text-transform:uppercase;
 	padding:10px;
+	display:none;
 }
 
 .footer a {
