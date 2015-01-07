@@ -322,7 +322,10 @@
 
 			<!-- #(Photoset) -->
 			<div class="post photoset photoset-700">
-				!(Photoset-700)
+				{block:Photos}
+					<p><img src="{PhotoURL-HighRes}" class="highres"></p>
+				{/block:Photos}
+				
 				<!-- #(Caption) -->
 				<div class="caption">!(Caption)</div>
 				<!-- ## -->

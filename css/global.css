@@ -157,7 +157,7 @@ h3 {
 
 div.content {
 	margin:0 auto;
-	max-width:720px;
+	max-width:820px;
 	padding:0 10px;
 }
 
@@ -168,18 +168,6 @@ div.content {
 
 .post {
 	margin-bottom:1rem;
-}
-
-.post.photoset {
-	display:none;
-}
-
-.post.photoset .html_photoset {
-	text-align:center;
-}
-
-.post.photoset iframe {
-	margin:0 auto;
 }
 
 .nav-meta {
@@ -248,19 +236,7 @@ hr {
 	color:#FFF;
 }
 
-@media (min-width: 721px) {
-	.post.photoset.photoset-700 {
-		display:block;
-	}
-}
-
-@media (max-width: 720px) {
-	.post.photoset.photoset-250 {
-		display:block;
-	}
-}
-
-@media (max-width: 720px) {
+@media (max-width: 820px) {
 	div.title h1 {
 		font-size:1rem;
 	}
