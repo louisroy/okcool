@@ -25,6 +25,7 @@ html, body {
 body {
 	font-family:Helvetica Neue, Helvetica, Arial, sans-serif;
 	font-size:70%;
+	padding:10px 0;
 }
 
 a {
@@ -55,9 +56,10 @@ div.title {
 	color:#FFF;
 	position:relative;
 	text-align:center;
-	background-image:url(img/logo.svg);
+	background-image:url(http://louisroy.github.io/stolenground/img/logo.svg);
 	background-repeat:no-repeat;
-	background-size:contain;
+	background-size:300px 300px;
+	background-position:center center;
 }
 
 div.title:before {
@@ -70,18 +72,27 @@ div.title:before {
 
 div.title h1 {
 	display: inline-block;
-	vertical-align: middle;
-	background:#FFF;
 	color:#000;
 	font-size:3rem;
+	vertical-align:middle;
+	width:300px;
+	height:300px;
+}
+
+div.title h1 a {
+	display:block;
+	text-indent:-10000px;
+	width:100%;
+	height:100%;
+	outline:none;
 }
 
 h2 {
-	font-size:1.2rem;
+	font-size:1.5rem;
 }
 
 h3 {
-	font-size:1rem;
+	font-size:1.2rem;
 }
 
 .nav-collapse {
@@ -90,6 +101,14 @@ h3 {
 
 .nav-main {
 	display:block;
+}
+
+.nav-main .home a {
+	background-image:url(http://louisroy.github.io/stolenground/img/flag.svg);
+	background-repeat:no-repeat;
+	background-size:20px 20px;
+	background-position:center center;
+	
 }
 
 .nav-collapse li {
@@ -151,8 +170,20 @@ div.content {
 	height:auto;
 }
 
+.post {
+	margin-bottom:1rem;
+}
+
+.post.photoset {
+	display:none;
+}
+
+.post.photoset .html_photoset {
+	text-align:center;
+}
+
 .post.photoset iframe {
-	width:100%;
+	margin:0 auto;
 }
 
 .nav-meta {
@@ -202,8 +233,49 @@ hr {
 	margin:10px auto;
 }
 
+.footer {
+	text-align:center;
+	font-size:0.8rem;
+	text-transform:uppercase;
+	padding:10px;
+}
 
-@media (max-width: 700px) {
+.footer a {
+	display:inline-block;
+	padding:10px 15px;
+}
+
+.footer a:hover {
+	background:#000;
+	color:#FFF;
+}
+
+@media (min-width: 721px) {
+	.post.photoset.photoset-700 {
+		display:block;
+	}
+}
+
+@media (min-width:521px) and (max-width: 720px) {
+	.post.photoset.photoset-500 {
+		display:block;
+	}
+}
+
+@media (min-width:421px) and (max-width: 520px) {
+	.post.photoset.photoset-400 {
+		display:block;
+	}
+}
+
+@media (max-width: 420px) {
+	.post.photoset.photoset-250 {
+		display:block;
+	}
+}
+
+
+@media (max-width: 720px) {
 	div.title h1 {
 		font-size:1rem;
 	}
@@ -216,6 +288,10 @@ hr {
 		display:none;
 		border-top:1px solid #000;
 		border-bottom:1px solid #000;
+	}
+	
+	.nav-main li:first-child {
+		display:none;
 	}
 	
 	.nav-main li {
@@ -242,6 +318,9 @@ hr {
 			<li><a href="#" class="dropdown"><i class="fa fa-navicon"></i></a></li>
 		</ul>
 		<ul class="nav-main cf">
+			<li class="home">
+				<a href="/">Home</a>
+			</li>
 			<li>
 				<a href="/about/">About</a>
 			</li>
@@ -252,7 +331,7 @@ hr {
 				<a href="/features/">Features</a>
 			</li>
 			<li>
-				<a href="/submit/">Submit</a>
+				<a href="/submission/">Submit</a>
 			</li>
 			<li>
 				<a href="/links/">Links</a>
@@ -288,7 +367,22 @@ hr {
 					
 					
 					
-						<div class="post photoset">
+						<div class="post photoset photoset-700">
+							
+							
+						</div>
+						
+						<div class="post photoset photoset-500">
+							
+							
+						</div>
+						
+						<div class="post photoset photoset-400">
+							
+							
+						</div>
+						
+						<div class="post photoset photoset-250">
 							
 							
 						</div>
@@ -369,7 +463,22 @@ hr {
 					
 					
 					
-						<div class="post photoset">
+						<div class="post photoset photoset-700">
+							
+							
+						</div>
+						
+						<div class="post photoset photoset-500">
+							
+							
+						</div>
+						
+						<div class="post photoset photoset-400">
+							
+							
+						</div>
+						
+						<div class="post photoset photoset-250">
 							
 							
 						</div>
@@ -412,7 +521,22 @@ hr {
 					
 					
 					
-						<div class="post photoset">
+						<div class="post photoset photoset-700">
+							
+							
+						</div>
+						
+						<div class="post photoset photoset-500">
+							
+							
+						</div>
+						
+						<div class="post photoset photoset-400">
+							
+							
+						</div>
+						
+						<div class="post photoset photoset-250">
 							
 							
 						</div>
@@ -507,7 +631,22 @@ Stolen Ground Webstore"/>
 					
 					
 					
-						<div class="post photoset">
+						<div class="post photoset photoset-700">
+							
+							
+						</div>
+						
+						<div class="post photoset photoset-500">
+							
+							
+						</div>
+						
+						<div class="post photoset photoset-400">
+							
+							
+						</div>
+						
+						<div class="post photoset photoset-250">
 							
 							
 						</div>
@@ -550,7 +689,22 @@ Stolen Ground Webstore"/>
 					
 					
 					
-						<div class="post photoset">
+						<div class="post photoset photoset-700">
+							
+							
+						</div>
+						
+						<div class="post photoset photoset-500">
+							
+							
+						</div>
+						
+						<div class="post photoset photoset-400">
+							
+							
+						</div>
+						
+						<div class="post photoset photoset-250">
 							
 							
 						</div>
@@ -711,9 +865,9 @@ Stolen Ground Webstore"/>
 		
 	</div>
 	
-	<footer>
+	<footer class="footer">
 		
-			<a href="/page/2">Next &#187;</a>
+			<a href="/page/2">Next &rsaquo;</a>
 		
 		
 		<a href="/archive">Archive</a>
