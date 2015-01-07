@@ -28,6 +28,8 @@ $('.dropdown').on('click', function(ev) {
 $(document).on('inview', '.infinite-scroll', function (ev, visible, topOrBottomOrBoth) {
 	var $container = $(this);
 	
+	$container.addClass('loading');
+	
 	$.get($container.data('href'), function(data) {
 		var doc = document.createElement('html');
 			doc.innerHTML = data;

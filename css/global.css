@@ -223,6 +223,18 @@ hr {
 	margin:10px auto;
 }
 
+.infinite-scroll {
+	height:0px;
+	overflow:hidden;
+	font-size:1.5rem;
+	color:#999;
+	text-align:center;
+}
+
+.infinite-scroll.loading {
+	height:auto;
+}
+
 .footer {
 	text-align:center;
 	font-size:0.8rem;
