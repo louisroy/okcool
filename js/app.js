@@ -46,3 +46,8 @@ $(document).on('inview', '.infinite-scroll', function (ev, visible, topOrBottomO
 		$container.replaceWith($("#content", doc).html());
 	}, 'html');
 });
+
+$(document).pjax('a:not([target])', '#content', {
+	timeout:1000,
+	fragment:'#content'
+});
