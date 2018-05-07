@@ -43,7 +43,7 @@ div.title {
 	color:#FFF;
 	position:relative;
 	text-align:center;
-	background-image:url(http://cdn.rawgit.com/louisroy/stolenground/gh-pages/img/logo.svg);
+	background-image:url(@(img/logo.svg)?v=20180507);
 	background-repeat:no-repeat;
 	background-size:300px 300px;
 	background-position:center center;
@@ -95,7 +95,7 @@ h3 {
 }
 
 .nav-main .home a {
-	background-image:url(http://cdn.rawgit.com/louisroy/stolenground/gh-pages/img/flag.svg);
+	background-image:url(@(img/flag.svg)?v=20180507);
 	background-repeat:no-repeat;
 	background-size:20px 20px;
 	background-position:center center;
@@ -104,7 +104,7 @@ h3 {
 }
 
 .nav-main .home a:hover {
-	background-image:url(http://cdn.rawgit.com/louisroy/stolenground/gh-pages/img/flag-white.svg);
+	background-image:url(@(img/flag-white.svg)?v=20180507);
 	background-repeat:no-repeat;
 	background-size:20px 20px;
 	background-position:center center;

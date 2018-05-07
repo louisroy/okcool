@@ -1,6 +1,13 @@
-blog: stolenground
-email: email@gmail.com
-password: p4ssw0rd
-output_path: .peak
-port: 1111
-index: index.html
+watch:
+  blog: stolengroundpublishing
+  email: email@gmail.com
+  password: p4ssw0rd
+  index: index.html
+
+deploy:
+  blog: stolengroundpublishing
+  email: email@gmail.com
+  password: p4ssw0rd
+  index: index.html
+  compiler:
+    url: http://cdn.rawgit.com/louisroy/stolenground/gh-pages/
