@@ -1,7 +1,7 @@
 {
-  "name": "stolenground",
+  "name": "okcool",
   "version": "1.0.0",
-  "description": "stolenground\r ============",
+  "description": "okcool\r ============",
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {},
@@ -10,12 +10,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/louisroy/stolenground"
+    "url": "https://github.com/louisroy/okcool"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/louisroy/stolenground/issues"
+    "url": "https://github.com/louisroy/okcool/issues"
   },
-  "homepage": "https://github.com/louisroy/stolenground"
+  "homepage": "https://github.com/louisroy/okcool"
 }

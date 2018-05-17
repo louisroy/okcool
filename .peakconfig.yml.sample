@@ -10,4 +10,4 @@ deploy:
   password: p4ssw0rd
   index: index.html
   compiler:
-    url: http://cdn.rawgit.com/louisroy/stolenground/gh-pages/
+    url: http://cdn.rawgit.com/louisroy/okcool/gh-pages/
